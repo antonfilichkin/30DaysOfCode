@@ -14,7 +14,7 @@ class Add{
             sum += value;
             outString += "" + value + "+";
         }
-        System.out.println(outString.substring(0,outString.length()-1v)+"="+sum);
+        System.out.println(outString.substring(0,outString.length()-1)+"="+sum);
     }
 }
 
