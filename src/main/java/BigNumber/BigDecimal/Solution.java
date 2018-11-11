@@ -3,6 +3,7 @@ package BigNumber.BigDecimal;
 import java.lang.reflect.Array;
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
@@ -30,8 +31,9 @@ class Solution {
 //            }
 //        } while (!isSorted);
 
-        // TODO: 02.11.2018
-//        sort via comparator!!!
+//        Arrays.sort(s, 0, n, Collections.reverseOrder((a1, a2) -> new BigDecimal(a1).compareTo(new BigDecimal(a2))));
+
+        Arrays.sort(s, 0, n, Collections.reverseOrder(Comparator.comparing(BigDecimal::new)));
 
 
         //Output
